@@ -1,8 +1,14 @@
 body {
-  background-color: #EEE7DA; /* 배경색 설정 */
+  background-color: #B3C8CF; /* 배경색 설정 */
   font-family: Arial, sans-serif; /* 폰트 설정 */
   margin: 0;
   padding: 0;
+}
+
+h1{
+  position: relative;
+  top: 50px;
+  left: 50%;
 }
 
 .tab-header {
@@ -23,12 +29,23 @@ body {
 }
 
 .about-image{  
-  height: 500px;
-  width: 500px;
-  padding: 200px 200px;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top: 130px;
+  left: 25%;
 }
 
 img{
   width: 100%;
   height: auto;
+}
+
+p {
+  position: absolute;
+  top: 35%;
+  left: 55%;  
+  font-size: 20px;
+  font-weight: bold;
+  color: #363636;
 }

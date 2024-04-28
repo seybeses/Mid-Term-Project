@@ -5,6 +5,7 @@ body {
   padding: 0;
 }
 .tab-header {
+  background-color: #F2F1EB;
   display: flex; /* 플렉스박스 모델 적용 */
   background-color: #FFF; /* 탭 배경색 */
   padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩 */

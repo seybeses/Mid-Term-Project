@@ -33,7 +33,7 @@
 h1{
   position: relative;
   top: 170px;
-  left: 50%;
+  left: 46%;
   font-size: 50px;
 }
 
@@ -60,7 +60,6 @@ p {
   height: 93vh;
   width: 100%;
   overflow-x: hidden;
-
 }
 
 .about-git-image{
@@ -95,7 +94,38 @@ p {
 
 .txt-title{
   position: relative;
-  top: 170px;
+  top: 100px;
   left: 46%;
   font-size: 50px;
+}
+
+.cat-more img{
+  width: 400px; /* 원하는 너비(px) 설정 */
+  height: auto; /* 세로 크기를 자동으로 조정하여 비율 유지 */
+  position: relative;
+  top:190px;
+  left: 300px;
+}
+
+.song-more img{
+  width: 400px; /* 원하는 너비(px) 설정 */
+  height: auto; /* 세로 크기를 자동으로 조정하여 비율 유지 */
+  position: absolute;
+  top: 1295px;
+  left: 55%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  z-index: 10000;
+  transition: width 0.5s;
 }

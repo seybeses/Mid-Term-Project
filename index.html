@@ -35,34 +35,55 @@
   </div>
 
   <div class="more">
-    <p class="txt-title"></p>
-
-    <a href="https://youtu.be/ruiBdjdtWKk?si=heW_vI6mCFKx9NOt">
-      <img src="cat.png">
-    </a>
-    <a href="https://youtu.be/FkefRSxpuFk?si=kkivuuhahrx_zIW9">
-      <img src="song.png">
-    </a>
-
+    <p class="txt-title"> </p>
+    
+    <div>
+      <div class="cat-more">
+        <a href="https://youtu.be/ruiBdjdtWKk?si=heW_vI6mCFKx9NOt" >
+          <img src="cat.png">
+        </a>
+      </div>
+      <div class="song-more">
+        <a href="https://youtu.be/FkefRSxpuFk?si=kkivuuhahrx_zIW9">
+          <img src="song.png">
+        </a>
+      </div>
+    </div>
   </div>
+
+  <div class="progress-bar"></div>
 
 <script>
   const $txt = document.querySelector(".txt-title");
   const content = "I LIKE";
   let contentIndex = 0;
+  let intervalId; // setInterval 함수의 반환값을 저장할 변수
   
   let typing = function () {
-    $txt.innerHTML += content[contentIndex];
-    contentIndex++;
-
-    if (contentIndex > content.length) {
-      $txt.textContent = "";
-      contentIndex = 0;
+    // contentIndex가 content의 길이보다 작을 때만 텍스트 추가
+    if (contentIndex < content.length) {
+      $txt.innerHTML += content[contentIndex];
+      contentIndex++;
+    } else {
+      clearInterval(intervalId); // contentIndex가 content.length와 같거나 크면 clearInterval 호출하여 setInterval 멈춤
     }
   };
+  
+  intervalId = setInterval(typing, 500);
 
-  setInterval(typing, 500);
-
+  let scrollTop = 0;
+  let bar;
+  
+  window.onload = function () {
+    bar = document.querySelector(".progress-bar");
+  };
+  
+  window.addEventListener("scroll", () => {
+    scrollTop = document.documentElement.scrollTop;
+    let per = Math.ceil((scrollTop / (document.body.scrollHeight - window.innerHeight)) * 100);
+    bar.style.width = per + "%";
+  }, false);
   </script>
 </body>
 </html>
+

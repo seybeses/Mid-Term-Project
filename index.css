@@ -1,3 +1,11 @@
+.about {
+  background-color: #B3C8CF; /* 배경색 설정 */
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .tab-header {
   position: fixed;
   top: 0;
@@ -9,8 +17,8 @@
 
 .tab {
   display: inline-block;
-  margin-right: 15px; /* 탭 사이의 간격 */
   padding: 10px; /* 탭 내부 패딩 */
+  margin-right: 15px; /* 탭 사이의 간격 */
   cursor: pointer; /* 마우스 커서를 포인터로 변경 */
   margin-top: 10px;
   margin-left: 20px;
@@ -21,12 +29,6 @@
   font-weight: bold; /* 마우스 오버 시 탭의 배경색 변경 */
 }
 
-.about {
-  background-color: #B3C8CF; /* 배경색 설정 */
-  font-family: Arial, sans-serif; /* 폰트 설정 */
-  height: 100vh;
-  width: 100%;
-}
 
 h1{
   position: relative;
@@ -56,7 +58,22 @@ p {
   background-color: #F1EEDC; /* 배경색 설정 */
   font-family: Arial, sans-serif; /* 폰트 설정 */
   height: 93vh;
-  width: 100%; 
+  width: 100%;
 
 }
 
+.about-git-image{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 68%;
+  left: 56%;
+}
+
+.about-insta-image{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 68%;
+  left: 64%;
+}

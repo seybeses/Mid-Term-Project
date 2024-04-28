@@ -35,8 +35,34 @@
   </div>
 
   <div class="more">
-    
+    <p class="txt-title"></p>
+
+    <a href="https://youtu.be/ruiBdjdtWKk?si=heW_vI6mCFKx9NOt">
+      <img src="cat.png">
+    </a>
+    <a href="https://youtu.be/FkefRSxpuFk?si=kkivuuhahrx_zIW9">
+      <img src="song.png">
+    </a>
 
   </div>
+
+<script>
+  const $txt = document.querySelector(".txt-title");
+  const content = "I LIKE";
+  let contentIndex = 0;
+  
+  let typing = function () {
+    $txt.innerHTML += content[contentIndex];
+    contentIndex++;
+
+    if (contentIndex > content.length) {
+      $txt.textContent = "";
+      contentIndex = 0;
+    }
+  };
+
+  setInterval(typing, 500);
+
+  </script>
 </body>
 </html>

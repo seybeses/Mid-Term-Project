@@ -1,0 +1,23 @@
+body {
+  background-color: #EEE7DA; /* 배경색 설정 */
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  margin: 0;
+  padding: 0;
+}
+.tab-header {
+  display: flex; /* 플렉스박스 모델 적용 */
+  background-color: #FFF; /* 탭 배경색 */
+  padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩 */
+}
+.tab {
+  margin-right: 15px; /* 탭 사이의 간격 */
+  padding: 10px; /* 탭 내부 패딩 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+.tab:hover {
+  background-color: #CCCCCC; /* 마우스 오버 시 탭의 배경색 변경 */
+}
+.active {
+  font-weight: bold; /* 활성 탭의 폰트 굵게 */
+  color: #333; /* 활성 탭의 글자색 */
+}

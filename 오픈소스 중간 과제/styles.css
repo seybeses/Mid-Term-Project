@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #B8BC7F;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.tab-header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #E0E974;
+    z-index: 1;
+}
+
+.header-Introduce {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    font-size: 40px; 
+    font-weight: bold;
+    color: #424242;
+}
+
+.header-More {
+    font-size: 25px;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    color: #2e2e2e;
+    transition: font-weight 0.3s ease, color 0.3s ease; 
+    cursor: pointer; 
+}
+
+.header-More:hover {
+    font-weight: bold; 
+}
+
+.tab-header img {
+    position: absolute;
+    top: 37px;
+    right: 55px;
+    width: 40px; 
+    height: auto; 
+}
+
+.insta, .git, .insta2, .favorite1, .favorite2, .favorite3,.favorite4 {
+    cursor: pointer; 
+}
+
+.rounded-rectangle {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 90%;
+    background-color: #E0E974;
+    border-radius: 70px;
+    z-index: 0;
+}
+
+.name1 {
+    font-size: 200px; 
+    position: absolute;
+    top: 190px; 
+    left: 10%;
+    color: #eeeeee;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+.name2 {
+    font-size: 200px; 
+    position: absolute;
+    top: 190px; 
+    left: 70%;
+    color: #eeeeee;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+.star{
+    position: absolute;
+    top: 100px; 
+    left: 40%;
+    width: 500px; 
+    height: auto;   
+}
+
+.circle1 {
+    position: absolute;
+    top: 90px; 
+    left: 5%;
+    width: 350px; 
+    height: auto;  
+}
+
+.circle2 {
+    position: absolute;
+    top: 280px; 
+    left: 75%;
+    width: 350px; 
+    height: auto;  
+}
+
+.text-container {
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.flow-text {
+    position: relative;
+    top: 250px;
+    font-size: 24px;
+    display: inline-block; 
+    white-space: nowrap; 
+    animation: flowRight 120s linear infinite; 
+    color:#2e2e2e;
+}
+
+@keyframes flowRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
+
+.profile-box{
+    position: absolute;
+    top: 1200px;
+    width: 80%;
+    height: 70%;
+    background-color: #e0e2cc;
+    border-radius: 70px; 
+}
+
+.Profile{
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    font-size: 40px; 
+    font-weight: bold;
+    color: #424242;    
+}
+
+.picture{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    width: 550px; 
+    height: auto;     
+}
+
+.profile-text{
+    font-size: 35px; 
+    position: relative;
+    top: -350px; 
+    left: 50%;
+    color: #414141;
+    z-index: 1;
+    font-weight: bolder;   
+    line-height: 2; 
+}
+
+.insta {
+    position: absolute;
+    top: 400px;  
+    left: 950px;  
+    width: 100px; 
+    height: auto;
+}
+
+.git {
+    position: absolute;
+    top: 400px;  
+    left: 1100px;  
+    width: 100px; 
+    height: auto; 
+}
+
+.Favorite-text{
+    font-size: 150px; 
+    position: absolute;
+    top: 2200px; 
+    left: 5%;
+    color: #eeeeee;
+    font-weight: bolder;    
+}
+
+.favorite1{
+    position: absolute;
+    top: 2500px;  
+    left: 800px;  
+    width: 500px; 
+    height: auto;
+}
+
+.favorite2{
+    position: absolute;
+    top: 2900px;  
+    left: 1050px;  
+    width: 700px; 
+    height: auto;
+}
+
+.favorite3{
+    position: absolute;
+    top: 3700px;  
+    left: 800px;  
+    width: 600px; 
+    height: auto;
+}
+
+.favorite4{
+    position: absolute;
+    top: 3400px;  
+    left: 200px;  
+    width: 600px; 
+    height: auto;
+}
+
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: transparent; 
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0; 
+    transition: width 0.3s ease; 
+}

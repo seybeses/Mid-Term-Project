@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounded Rectangle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tab-header">
+        <span class="header-Introduce">Introduce</span>
+        <img src="insta.png" class="insta2" alt="Instagram Logo" onclick="redirectToInstagram()">
+        <span class="header-More">More</span>
+    </div>
+
+    <div class="rounded-rectangle">
+        <span class="name1">Yeong</span>
+        <span class="name2">Bin</span>
+        <img src="Vector.png" class="star" alt="image">
+        <img src="circle1.png" class="circle1" alt="image">
+        <img src="circle2.png" class="circle2" alt="image">
+    </div>
+    
+    <div class="text-container">
+        <p class="flow-text"> ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶ ✶Seo Young Bin✶</p>
+    </div>
+
+    <div class="profile-box">
+        <span class="Profile">Profile</span>
+        <img src="about.png" class="picture" alt="image">
+        <div class="profile-text">
+            Name: Seo Young Bin<br>
+            Major: Computer Engineering<br>
+            Date of birth: 2003.07.04<br>
+            Contact:
+        </div>
+        <img src="insta.png" class="insta" alt="Instagram Logo" onclick="redirectToInstagram()">
+        <img src="git.png" class="git" alt="Git Logo" onclick="redirectToGitHub()">
+    </div>
+
+    <div class="Favorite-text">My Favorite</div>
+    <div class="favorite">
+        <img src="favorite1.png" class="favorite1" alt="Favorite" onclick="redirectToLink('https://youtu.be/ruiBdjdtWKk?si=Buu7evfm07PIFOzA')">
+        <img src="favorite2.png" class="favorite2" alt="Favorite" onclick="redirectToLink('https://youtube.com/shorts/iQmkeTI_iS4?si=YWryj-qqcqSXblBT')">
+        <img src="favorite3.png" class="favorite3" alt="Favorite" onclick="redirectToLink('https://youtu.be/FkefRSxpuFk?si=xKceaDlEjBC5iHgU')">
+        <img src="favorite4.png" class="favorite4" alt="Favorite" onclick="redirectToLink('https://youtu.be/ImuWa3SJulY?si=aCxaKkjnRwSLJ7W6')">
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" style="width: 0;"></div>
+    </div>
+
+    <script>
+        function redirectToInstagram() {
+            window.location.href = 'https://www.instagram.com/seybeses/';
+        }
+    
+        function redirectToGitHub() {
+            window.location.href = 'https://github.com/seybeses';
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
+        }
+
+        window.onload = function() {
+        const headerMore = document.querySelector('.header-More');
+
+        headerMore.addEventListener('click', function() {
+            const profileSection = document.querySelector('.Profile');
+            profileSection.scrollIntoView({ behavior: 'smooth' });
+        });
+        };
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            let scrollTop = 0;
+            let bar;
+
+            bar = document.querySelector(".progress-bar");
+            window.addEventListener("scroll", () => {
+                scrollTop = document.documentElement.scrollTop;
+                let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                let per = Math.ceil((scrollTop / scrollHeight) * 100);
+                bar.style.width = per + "%"; // 프로그레스 바 너비 설정
+            });
+        });
+    </script>
+
+</body>
+</html>
